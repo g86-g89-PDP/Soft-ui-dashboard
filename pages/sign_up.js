@@ -1,11 +1,13 @@
 import React from "react";
 
+import "../styles/sing_up.css";
+
 const Sing_up = () => {
   return (
-    <div>
+    <div className="main">
       <nav className="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100">
         <div className="container">
-          <div>
+          <div className="list">
             <ul className="navbar-nav navbar-nav-hover mx-auto">
               <li className="nav-item dropdown dropdown-hover mx-2">
                 <a

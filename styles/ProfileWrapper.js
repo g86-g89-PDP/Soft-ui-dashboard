@@ -58,11 +58,23 @@ export const ProfileWrapper = styled.div`
     &-right {
       position: relative;
       .profile__account-right-back {
-        background-color: ;
+        transition: 0.5s;
+        position: absolute;
+        z-index: -1;
+        width: 100px;
+        height: 30px;
+        top: -5px;
+        left: -11px;
+        background: #ffffff;
+        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12),
+          0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
       }
       div {
         width: 100px;
         h1 {
+          cursor: pointer;
+
           font-family: Open Sans;
           font-style: normal;
           font-weight: 600;

@@ -6,7 +6,7 @@ const SignIn = () => {
         <SignInWrapper>
             <div className="d-flex justify-content-space-between">
                 <div><h2>Soft UI Dashboard</h2></div>
-                <div className="head">
+                <div className="list">
                     <ul>
                         <li>Dashboard</li>
                         <li>Profile</li>

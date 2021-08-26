@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 const signInWrapper = styled.div`
-.head{
+.list{
     list-style-type: none;
 }`
 

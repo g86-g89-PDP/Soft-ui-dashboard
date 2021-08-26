@@ -90,6 +90,7 @@ const Wrapper = styled.div`
       }
       .pages {
         padding: 5px;
+        min-height: 80vh;
       }
     }
   }

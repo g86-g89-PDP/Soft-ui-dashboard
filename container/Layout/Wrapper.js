@@ -97,6 +97,7 @@ const Wrapper = styled.div`
       .pages {
         padding: 5px;
         min-height: 100vh;
+        background-color: #f6f7f8;
       }
     }
   }

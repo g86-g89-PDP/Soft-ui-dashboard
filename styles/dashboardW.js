@@ -8,7 +8,7 @@ const Dashboard=styled.div`
         padding: 10px;
         box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
         border-radius: 16px;
-        margin: 5px 0;
+        margin: 10px 0;
         display: flex;
         background-color: white;
         .tm3{
@@ -42,6 +42,10 @@ const Dashboard=styled.div`
         padding: 15px 0;
     }
     .roketInf{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+     
         .tm1{
             font-family: Open Sans;
             font-style: normal;
@@ -60,7 +64,19 @@ const Dashboard=styled.div`
             letter-spacing: -0.553191px;
             color: #252F40;
         }
+        a{
+            text-decoration: none;
+            color: #67748E;
+            font-size: 15px;
+            &:hover{
+            color: #67748E;
+            font-size: 15px;
+            }
+        }
        
+    }
+    .card2{
+        margin: 5px;
     }
     
 `;

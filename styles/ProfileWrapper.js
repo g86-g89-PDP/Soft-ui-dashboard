@@ -58,11 +58,23 @@ export const ProfileWrapper = styled.div`
     &-right {
       position: relative;
       .profile__account-right-back {
-        background-color: ;
+        transition: 0.5s;
+        position: absolute;
+        z-index: -1;
+        width: 100px;
+        height: 30px;
+        top: -5px;
+        left: -11px;
+        background: #ffffff;
+        box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12),
+          0px 2px 4px -1px rgba(0, 0, 0, 0.07);
+        border-radius: 8px;
       }
       div {
         width: 100px;
         h1 {
+          cursor: pointer;
+
           font-family: Open Sans;
           font-style: normal;
           font-weight: 600;
@@ -72,6 +84,53 @@ export const ProfileWrapper = styled.div`
           color: #67748e;
         }
       }
+    }
+  }
+  .profile-content {
+    margin-top: 30px;
+    div {
+      div {
+        padding: 20px;
+        border-radius: 15px;
+        background-color: white;
+        min-height: 500px;
+        div {
+          padding: 0;
+          min-height: 0;
+        }
+        h1 {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 22px;
+          letter-spacing: -0.442553px;
+          color: #252f40;
+        }
+      }
+    }
+  }
+  .profile-bottom {
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 20px;
+    div {
+      img {
+        width: 100%;
+        height: 300px;
+        border-radius: 15px;
+        margin: 10px 0;
+      }
+    }
+    .upload-project {
+      border-radius: 15px;
+      border: 1px solid grey;
+      cursor: pointer;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 `;

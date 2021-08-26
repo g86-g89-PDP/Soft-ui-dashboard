@@ -80,7 +80,7 @@ const Wrapper = styled.div`
 
       .header {
         width: 100%;
-        padding: 5px;
+        padding: 20px;
         .logo {
           width: 10%;
           img {
@@ -89,8 +89,12 @@ const Wrapper = styled.div`
         }
       }
       .pages {
+<<<<<<< HEAD
         padding: 50px;
         background-color: #f6f7f8;
+=======
+        padding: 5px;
+>>>>>>> 538e9bc78261705657b731ba5f09c850ee3b34a3
       }
     }
   }

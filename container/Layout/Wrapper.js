@@ -76,12 +76,17 @@ const Wrapper = styled.div`
     }
 
     .content {
+      background-color: #f6f7f8;
       flex: 1;
       overflow-x: hidden !important;
-
       .header {
+        background-color: #fff;
         width: 100%;
         padding: 20px;
+
+        .profile-bold {
+          font-weight: 700;
+        }
         .logo {
           width: 10%;
           img {
@@ -92,7 +97,6 @@ const Wrapper = styled.div`
       .pages {
         padding: 5px;
         min-height: 100vh;
-        background-color: #f6f7f8;
       }
     }
   }

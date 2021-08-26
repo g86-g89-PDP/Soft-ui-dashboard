@@ -89,7 +89,7 @@ const Wrapper = styled.div`
         }
       }
       .pages {
-        padding: 50px;
+        padding: 5px;
       }
     }
   }

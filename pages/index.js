@@ -1,4 +1,4 @@
-import  Dashboard  from "../container/Layout/dashboardW";
+import  Dashboard  from "../styles/dashboardW";
 import { FaCoins } from "react-icons/fa";
 
 
@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </div>
           <div className="col-5">
-            
+
           </div>
          
         </div>

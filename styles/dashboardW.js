@@ -4,10 +4,10 @@ const Dashboard=styled.div`
     padding: 10px;
     transition: 0.3s;
     .todayMoney{
-        padding: 10px;
+        padding: 10px 0;
         border-radius: 10px;
         box-shadow: 0 2px 3px  gray;
-        margin: 10px;
+        margin: 10px 0;
         display: flex;
         .tm3{
             font-weight: bold;

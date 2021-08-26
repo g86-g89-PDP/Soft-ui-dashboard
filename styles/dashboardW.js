@@ -3,12 +3,14 @@ import  styled  from "styled-components";
 const Dashboard=styled.div`
     padding: 10px;
     transition: 0.3s;
+  
     .todayMoney{
-        padding: 10px 0;
-        border-radius: 10px;
-        box-shadow: 0 2px 3px  gray;
-        margin: 10px 0;
+        padding: 10px;
+        box-shadow: 0px 20px 27px rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+        margin: 5px 0;
         display: flex;
+        background-color: white;
         .tm3{
             font-weight: bold;
             font-size: 14px;

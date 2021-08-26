@@ -71,19 +71,23 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col-lg-7 col-sm-12 d-flex todayMoney">
+          <div className="col-lg-7 col-sm-12 d-flex p-2">
+            <div className='card2 todayMoney'>
             <div className='roketInf'>
+              <div>
               <p className='tm1'>Built by developers</p>
               <p className='tm2'>Soft UI Dashboard </p>
-              <p>From colors, cards, typography to complex elements, you will find the full documentation.</p>
+              <p className='tm1'>From colors, cards, typography to complex elements, you will find the full documentation.</p>
+              </div>
               <p><a href="#">Read more</a></p>
             </div>
             <div className='roketCard'>
               <img src="https://demos.creative-tim.com/soft-ui-dashboard/assets/img/illustrations/rocket-white.png" alt="picture" className='rokeImg'/>
             </div>
+            </div>
           </div>
           <div className="col-5">
-
+           <p></p>
           </div>
          
         </div>

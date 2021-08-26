@@ -39,6 +39,7 @@ const Wrapper = styled.div`
             display: flex;
             color: inherit;
             align-items: center;
+            transition: all 0.5s !important;
             &.active {
               background-color: #fff;
               box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);

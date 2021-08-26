@@ -90,6 +90,7 @@ const Wrapper = styled.div`
       }
       .pages {
         padding: 50px;
+        background-color: #f6f7f8;
       }
     }
   }

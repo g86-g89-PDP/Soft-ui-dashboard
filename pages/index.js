@@ -9,51 +9,69 @@ export default function Home() {
           <div className="col-lg-3 col-md-6 col-sm-12">
             <div className='todayMoney'>
              <div>
-                <p>
+                <p className='p-0 m-0'>
                   today's Money
                 </p>
-                <p className='fw-bold fs-4'>
+                <p className='fw-bold fs-4 m-0 p-0'>
                   $ 53.000 <span className='tm3'>+ $50</span> 
                 </p>
              </div>
              <div className='tmIconsCard'>
-               <p className='p-0 m-0'><FaCoins/></p>
+               <p className='p-0 m-0 text-light'><FaCoins/></p>
 
              </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12">
-            <div className='todayMoney'>
-              <p>
-                today's Money
-              </p>
-              <p className='fw-bold fs-4'>
-                $ 53.000 <span className='tm3'>+ $50</span> 
-              </p>
+          <div className='todayMoney'>
+             <div>
+                <p className='p-0 m-0'>
+                  today's Money
+                </p>
+                <p className='fw-bold fs-4 m-0 p-0'>
+                  $ 53.000 <span className='tm3'>+ $50</span> 
+                </p>
+             </div>
+             <div className='tmIconsCard'>
+               <p className='p-0 m-0 text-light'><FaCoins/></p>
+
+             </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12">
-            <div className='todayMoney'>
-              <p>
-                today's Money
-              </p>
-              <p className='fw-bold fs-4'>
-                $ 53.000 <span className='tm3'>+ $50</span> 
-              </p>
-              </div>
+          <div className='todayMoney'>
+             <div>
+                <p className='p-0 m-0'>
+                  today's Money
+                </p>
+                <p className='fw-bold fs-4 m-0 p-0'>
+                  $ 53.000 <span className='tm3 text-danger'>- $50</span> 
+                </p>
+             </div>
+             <div className='tmIconsCard'>
+               <p className='p-0 m-0 text-light'><FaCoins/></p>
+
+             </div>
+            </div>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12">
-            <div className='todayMoney'>
-              <p>
-                today's Money
-              </p>
-              <p className='fw-bold fs-4'>
-                $ 53.000
-              </p>
-              </div>
+          <div className='todayMoney'>
+             <div>
+                <p className='p-0 m-0'>
+                  today's Money
+                </p>
+                <p className='fw-bold fs-4 m-0 p-0'>
+                  $ 53.000 <span className='tm3'>+ $50</span> 
+                </p>
+             </div>
+             <div className='tmIconsCard'>
+               <p className='p-0 m-0 text-light'><FaCoins/></p>
+
+             </div>
+            </div>
           </div>
 
-          <div className="col-lg-7 col-sm-12 d-flex">
+          <div className="col-lg-7 col-sm-12 d-flex todayMoney">
             <div className='roketInf'>
               <p className='tm1'>Built by developers</p>
               <p className='tm2'>Soft UI Dashboard </p>

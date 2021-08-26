@@ -13,6 +13,7 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile__account-right d-flex">
+          <div className="profile__account-right-back" />
           <div>
             <h1>Overview</h1>
           </div>

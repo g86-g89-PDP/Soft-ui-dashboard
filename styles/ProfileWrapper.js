@@ -14,7 +14,7 @@ export const ProfileWrapper = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    z-index: -100;
+    z-index: 0;
     background: url("https://demos.creative-tim.com/soft-ui-dashboard/assets/img/curved-images/curved0.jpg"),
       linear-gradient(135deg, #ff0080 0%, #7928ca 100%);
     mix-blend-mode: normal;
@@ -57,6 +57,9 @@ export const ProfileWrapper = styled.div`
     }
     &-right {
       position: relative;
+      .profile__account-right-back {
+        background-color: ;
+      }
       div {
         width: 100px;
         h1 {

@@ -79,10 +79,16 @@ const Wrapper = styled.div`
       background-color: #f6f7f8;
       flex: 1;
       overflow-x: hidden !important;
+      position: relative;
       .header {
+        width: 78%;
+        z-index: 100000;
+        position: fixed;
+        top: 0;
         background-color: #fff;
-        width: 100%;
         padding: 20px;
+        background-color: #ffffff90;
+        backdrop-filter: blur(10px);
 
         .logo {
           width: 10%;
@@ -109,6 +115,7 @@ const Wrapper = styled.div`
         }
       }
       .pages {
+        margin-top: 100px;
         padding: 5px;
         min-height: 100vh;
         background-color: #f6f7f8;

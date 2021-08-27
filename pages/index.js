@@ -163,7 +163,7 @@ export default function Home() {
     <Dashboard>
         <div className="row">
             {todayMoney.map((v,i)=>{
-              return <div className='col-lg-3 col-md-6 col-sm-12' key={v.name}>
+              return <div className='col-lg-3 col-md-6 col-sm-12' key={v.minus}>
                 <div className='todayMoney'>
                 <div>
                    <p className='p-0 m-0'>

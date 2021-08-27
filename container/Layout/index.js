@@ -1,14 +1,14 @@
 import React from "react";
 import Wrapper from "./Wrapper";
 import Link from "next/link";
-import { AiTwotoneShop } from "react-icons/ai";
+import { AiFillCreditCard, AiTwotoneShop } from "react-icons/ai";
 import { useRouter } from "next/dist/client/router";
 import { BiSearch } from "react-icons/bi";
 import { IoPerson } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { IoMdNotifications } from "react-icons/io";
 import { useState } from "react";
-import { FormControl, InputGroup } from "react-bootstrap";
+// import { FormControl, InputGroup } from "react-bootstrap";
 const Layout = ({ children }) => {
   const links = [
     { href: "/", title: "Home", icon: <AiTwotoneShop /> },
@@ -17,6 +17,7 @@ const Layout = ({ children }) => {
       title: "Profile",
       icon: <AiTwotoneShop />,
     },
+    { href: "/billing", title: "Billing", icon: <AiFillCreditCard /> },
   ];
 
   const { asPath } = useRouter();
@@ -66,7 +67,7 @@ const Layout = ({ children }) => {
               </span>
             </div>
             <div className="right-side d-flex w-50">
-              <InputGroup className="mb-3">
+              {/* <InputGroup className="mb-3">
                 <InputGroup.Text id="basic-addon1">
                   <BiSearch />
                 </InputGroup.Text>
@@ -75,7 +76,7 @@ const Layout = ({ children }) => {
                   aria-label="Type here..."
                   aria-describedby="basic-addon1"
                 />
-              </InputGroup>
+              </InputGroup> */}
 
               <div className="sign-in">
                 <IoPerson />

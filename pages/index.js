@@ -148,7 +148,7 @@ const Soft2=[
   {icon:<AiFillHtml5/>,redesign:"New Order #4562135",date:"12 June 18.50 PM", color:"red"},
   {icon:<BsFillInboxesFill/>,redesign:"Company serverd payments",date:"08 May 18.50 PM", color:"blue"},
   {icon:<BsCreditCard/>,redesign:"New card added for order",date:"29 July 18.50 PM", color:"brown"},
-  {icon:<BsFillPieChartFill/>,redesign:"Umlock folders for development",date:"01 April 18.50 PM", color:"red"},
+  {icon:<BsFillPieChartFill/>,redesign:"Unlock folders for development",date:"01 April 18.50 PM", color:"red"},
   {icon:<BsBookHalf/>,redesign:"New order #456127",date:"20 Seot 18.50 PM", color:"gray"},
 
   

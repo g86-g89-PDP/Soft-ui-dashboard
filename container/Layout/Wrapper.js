@@ -76,26 +76,42 @@ const Wrapper = styled.div`
     }
 
     .content {
+      background-color: #f6f7f8;
       flex: 1;
       overflow-x: hidden !important;
-
       .header {
+        background-color: #fff;
         width: 100%;
         padding: 20px;
+
         .logo {
           width: 10%;
           img {
             width: 100%;
           }
         }
+
+        .right-side {
+          * {
+            font-size: 20px;
+          }
+          justify-content: space-evenly;
+          width: 50%;
+          color: #344767;
+          font-size: 2rem;
+          .sign-in {
+            display: flex;
+            align-items: center;
+            span {
+              margin-left: 5px;
+            }
+          }
+        }
       }
       .pages {
         padding: 5px;
-<<<<<<< HEAD
-=======
         min-height: 100vh;
         background-color: #f6f7f8;
->>>>>>> 702b518042d73907b96060ab2110099463b8323b
       }
     }
   }

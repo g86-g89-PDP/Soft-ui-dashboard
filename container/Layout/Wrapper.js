@@ -84,13 +84,27 @@ const Wrapper = styled.div`
         width: 100%;
         padding: 20px;
 
-        .profile-bold {
-          font-weight: 700;
-        }
         .logo {
           width: 10%;
           img {
             width: 100%;
+          }
+        }
+
+        .right-side {
+          * {
+            font-size: 20px;
+          }
+          justify-content: space-evenly;
+          width: 50%;
+          color: #344767;
+          font-size: 2rem;
+          .sign-in {
+            display: flex;
+            align-items: center;
+            span {
+              margin-left: 5px;
+            }
           }
         }
       }

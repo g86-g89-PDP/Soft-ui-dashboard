@@ -65,8 +65,8 @@ const Layout = ({ children }) => {
                 )}
               </span>
             </div>
-            <div className="right-side d-flex w-50">
-              <InputGroup className="mb-3">
+            <div className="right-side d-flex align-items-center">
+              <InputGroup className="w-50">
                 <InputGroup.Text id="basic-addon1">
                   <BiSearch />
                 </InputGroup.Text>

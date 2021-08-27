@@ -1,6 +1,21 @@
 import  Dashboard  from "../styles/dashboardW";
-import { FaCoins } from "react-icons/fa";
-import { IoIosRocket } from "react-icons/io";
+import { FaCoins,FaShopify} from "react-icons/fa";
+import { IoIosRocket,IoIosColorPalette } from "react-icons/io";
+import { AiFillSetting,AiFillHtml5 } from "react-icons/ai";
+import { FiCommand } from "react-icons/fi";
+import { RiSignalWifi3Fill ,RiMoneyDollarBoxFill} from "react-icons/ri";
+import { FcElectroDevices,FcFinePrint } from "react-icons/fc";
+import { ImCart } from "react-icons/fc";
+
+
+
+import { BsCreditCard,BsArrowUp ,BsArrowRight,BsFillInboxesFill,BsFillPieChartFill,BsBookHalf} from "react-icons/bs";
+import { GiProgression,GiRingingBell} from "react-icons/gi";
+
+
+
+
+
 
 
 import React, { PureComponent } from 'react';
@@ -119,13 +134,26 @@ const todayMoney=[
 ];
 
 const Soft=[
-  {soft:"Soft UI Shopify Version",img:"img",budget:"$14.000",completion:"green",protsent:"60%"},
-  {soft:"Soft UI Shopify Version",img:"img",budget:"$14.000",completion:"red",protsent:"32%"},
-  {soft:"Soft UI Shopify Version",img:"img",budget:"$14.000",completion:"yellow",protsent:"84%"},
-  {soft:"Soft UI Shopify Version",img:"img",budget:"$14.000",completion:"blue",protsent:"57%"},
-  {soft:"Soft UI Shopify Version",img:"img",budget:"$14.000",completion:"brown",protsent:"25%"}
+  {soft:"Soft UI Shopify Version",img:"face22.jpg",img2:"face-3.jpg",budget:"$14.000",completion:"blue",protsent:"60%",icons:<FaShopify/>},
+  {soft:"Progress Track",img:"face22.jpg",img2:"face-3.jpg",budget:"$3.000",completion:"blue",protsent:"10%",icons:<GiProgression/>},
+  {soft:"Fix Platforms Error",img:"face22.jpg",img2:"face-3.jpg",budget:"Not Set",completion:"green",protsent:"100%",icons:<FiCommand/>},
+  {soft:"launch new Mobile App",img:"face22.jpg",img2:"face-3.jpg",budget:"$20.600",completion:"green",protsent:"100%",icons:<RiSignalWifi3Fill/>},
+  {soft:"Add the new Landung Page",img:"face22.jpg",img2:"face-3.jpg",budget:"$4.000",completion:"blue",protsent:"25%",icons:<FcElectroDevices/>},
+  {soft:"Rdeisgn Online Store",img:"face22.jpg",img2:"face-3.jpg",budget:"$2.000",completion:"red",protsent:"90%",icons:<FcFinePrint/>},
+
 ]
 
+const Soft2=[
+  {icon:<GiRingingBell/>,redesign:"42.400 -Redesign store",date:"16 June 18.50 PM", color:"blue"},
+  {icon:<AiFillHtml5/>,redesign:"New Order #4562135",date:"12 June 18.50 PM", color:"red"},
+  {icon:<BsFillInboxesFill/>,redesign:"Company serverd payments",date:"08 May 18.50 PM", color:"blue"},
+  {icon:<BsCreditCard/>,redesign:"New card added for order",date:"29 July 18.50 PM", color:"brown"},
+  {icon:<BsFillPieChartFill/>,redesign:"Umlock folders for development",date:"01 April 18.50 PM", color:"red"},
+  {icon:<BsBookHalf/>,redesign:"New order #456127",date:"20 Seot 18.50 PM", color:"gray"},
+
+  
+
+]
 
 
 export default function Home() {
@@ -135,7 +163,7 @@ export default function Home() {
     <Dashboard>
         <div className="row">
             {todayMoney.map((v,i)=>{
-              return <div className='col-lg-3 col-md-6 col-sm-12'>
+              return <div className='col-lg-3 col-md-6 col-sm-12' key={v.name}>
                 <div className='todayMoney'>
                 <div>
                    <p className='p-0 m-0'>
@@ -163,10 +191,10 @@ export default function Home() {
               <p className='tm2'>Soft UI Dashboard </p>
               <p className='tm1'>From colors, cards, typography to complex elements, you will find the full documentation.</p>
               </div>
-              <p><a href="#">Read more</a></p>
+              <p><a href="#">Read more <BsArrowRight/></a></p>
             </div>
 
-            <div className='roketCard'>
+            <div className='roketCard d-flex justify-content-center'>
               <img src="https://demos.creative-tim.com/soft-ui-dashboard/assets/img/illustrations/rocket-white.png" alt="picture" className='rokeImg'/>
             </div>
             </div>
@@ -183,7 +211,7 @@ export default function Home() {
                     <p className='tm22'>Wealth creation is an evolutionarily recent positive-sum game. 
                       It is all about who take the opportunity first.</p>
                   </div>
-                  <p>Read More</p>
+                  <p>Read More <BsArrowRight/></p>
               </div>
            </div>
           </div>
@@ -209,15 +237,15 @@ export default function Home() {
                       </td>
                       <td  className='tm1'> <div className='firstTd'>
                           <div className='tableIcons2'><IoIosRocket/></div> 
-                        Users
+                        Clicks
                         </div></td>
                       <td  className='tm1'> <div className='firstTd'>
-                          <div className='tableIcons'><FaCoins/></div> 
-                        Users
+                          <div className='tableIcons3'><BsCreditCard/></div> 
+                        Sales
                         </div></td>
                       <td  className='tm1'> <div className='firstTd'>
-                          <div className='tableIcons'><FaCoins/></div> 
-                        Users
+                          <div className='tableIcons4'><AiFillSetting/></div> 
+                        Items
                         </div></td>
                     </tr>
                     <tr>
@@ -238,7 +266,7 @@ export default function Home() {
           <div className="col-lg-7 col-sm-12">
             <div className='todayMoney d-block'>
               <p className='m-0 p-0'>Sales Overview</p>
-              <p className='mt-0 mb-3'><span className='tm1'>4% more </span>in 2021</p>
+              <p className='mt-0 mb-3'><span className='tm1'> <span className='text-success'><BsArrowUp/></span> 4% more </span>in 2021</p>
               <ResponsiveContainer width="100%" height="100%">
               <LineChart width={500} height={300} data={data}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -270,9 +298,14 @@ export default function Home() {
                 </thead>
                 <tbody>
                   {Soft.map((v,i)=>{
-                    return  <tr>
-                    <td> <span><FaCoins/></span> {v.soft}</td>
-                    <td>{v.img}</td>
+                    return  <tr key={i} >
+                    <td className='pt-2 pb-2'> <span style={{color:v.completion}}>{v.icons}</span> {v.soft}</td>
+                    <td>
+                      <div>
+                        <img src={v.img} alt="" className='tableImage'/>
+                        <img src={v.img2} alt="" className='tableImage'/>
+                      </div>
+                    </td>
                     <td className='text-secondary'>{v.budget}</td>
                     <td className='text-secondary'>{v.protsent}
                       <div className='row1'>
@@ -296,29 +329,16 @@ export default function Home() {
               <p><span className='tm1'>24%</span> this month</p>
 
               <div>
-                <div className='d-flex'>
-                  <p>icon</p>
+                {Soft2.map((v,i)=>{
+                  return   <div className='d-flex' key={v.date}>
+                  <p style={{color:v.color}}>{v.icon} </p>
                   <div>
-                    <p className='mt-0 mb-0 pb-0'>$2.400- Redesign store</p>
-                    <p className='tm1 mt-0'>90 Jun 7.20 PM</p>
+                    <p className='mt-0 mb-0 pb-0'>{v.redesign}</p>
+                    <p className='tm1 mt-0'>{v.date}</p>
                   </div>
                 </div>
-
-                <div className='d-flex'>
-                  <p>icon</p>
-                  <div>
-                    <p className='mt-0 mb-0 pb-0'>$2.400- Redesign store</p>
-                    <p className='tm1 mt-0'>90 Jun 7.20 PM</p>
-                  </div>
-                </div>
-
-                <div className='d-flex'>
-                  <p>icon</p>
-                  <div>
-                    <p className='mt-0 mb-0 pb-0'>$2.400- Redesign store</p>
-                    <p className='tm1 mt-0'>90 Jun 7.20 PM</p>
-                  </div>
-                </div>
+                })}
+              
               </div>
             </div>
              </div>

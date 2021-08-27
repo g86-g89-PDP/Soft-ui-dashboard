@@ -39,6 +39,8 @@ const Dashboard=styled.div`
         min-height: 200px;
         .rokeImg{
         width: 180px;
+        margin: auto;
+        object-fit: cover;
         } 
         background: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
         box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.07);
@@ -149,6 +151,29 @@ const Dashboard=styled.div`
         justify-content: center;
         align-items: center;
     }
+    .tableIcons3{
+        background: linear-gradient(135deg, #FBCF33 0%, #F53939 100%);
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        width: 25px;
+        height:25px;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tableIcons4{
+      
+        background: linear-gradient(135deg, #FF667C 0%, #EA0606 100%);
+        box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.07), 0px 4px 6px -1px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        width: 25px;
+        height:25px;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .firstTd{
         display: flex;
         align-items: center;
@@ -164,14 +189,16 @@ const Dashboard=styled.div`
   .row1{
       width: 100% !important;
       height: 5px;
-      background-color: gray;
+      background-color: #E9ECEF;
       border-radius: 10px;
       .row2{
           width: 70%;
           height: 100%;
-          background-color: green;
           border-radius: 10px;
       }
+  }
+  .tableImage{
+      border-radius: 50%;
   }
 `;
 

@@ -2,8 +2,10 @@ import React from "react";
 import Wrapper from "./Wrapper";
 import Link from "next/link";
 import { AiTwotoneShop } from "react-icons/ai";
+import { useRouter } from "next/dist/client/router";
 
 const Layout = ({ children }) => {
+
     const links = [
         { href: "/", title: "Home", active: true, icon: <AiTwotoneShop /> },
         { href: "/signin", title: "Signin", active: false, icon: <AiTwotoneShop /> },
@@ -46,9 +48,38 @@ const Layout = ({ children }) => {
                     </div>
                     <div className="pages">{children}</div>
                 </div>
-            </div>
+=======
+  const links = [
+    {href: "/", title: "Home", active: true, icon: <AiTwotoneShop /> },
+                {
+                    href: "/profile",
+                title: "Profile",
+                active: false,
+                icon: <AiTwotoneShop />,
+    },
+                {href: "/", title: "Home", active: false, icon: <AiTwotoneShop /> },
+                {href: "/", title: "Home", active: false, icon: <AiTwotoneShop /> },
+                ];
+
+                const {query} = useRouter();
+                console.log(query);
+                return (
+                <Wrapper>
+                    <div className="content-wrapper">
+                        <div className="sidebar">
+                            <div className="sidebar-card">
+                                <div className="navbar-brand">
+                                    <div className="logo">
+                                        <img
+                                            src="https://demos.creative-tim.com/soft-ui-dashboard/assets/img/logo-ct.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span class="ms-1 font-weight-bold">Soft UI Dashboard</span>
+
+                                </div>
         </Wrapper>
-    );
+                            );
 };
 
-export default Layout;
+                            export default Layout;

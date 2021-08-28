@@ -212,7 +212,7 @@ export default function Home() {
                   </a>
                   <Image
                     src="/down-arrow-dark.svg"
-                    alt="Vercel Logo"
+                    alt="Vercel "
                     width={10}
                     height={10}
                     className="mt-3"

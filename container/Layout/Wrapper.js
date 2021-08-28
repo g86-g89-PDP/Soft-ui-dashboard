@@ -6,7 +6,7 @@ const Wrapper = styled.div`
 
     .sidebar {
       background-color: #f6f7f8;
-      width: 22%;
+      width: 17%;
       border-right: 1px solid #eee;
       height: 100vh;
       position: sticky;

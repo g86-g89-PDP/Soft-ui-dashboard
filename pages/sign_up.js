@@ -392,8 +392,9 @@ export default function Home() {
                           <input
                             className="form-check-input"
                             type="checkbox"
+                            id="input"
                           ></input>
-                          <label href="#" className="form-check-label">
+                          <label className="form-check-label" htmlFor="input">
                             I agree the
                             <a
                               href="#"

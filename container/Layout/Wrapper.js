@@ -5,7 +5,7 @@ const Wrapper = styled.div`
     display: flex;
 
     .sidebar {
-      background-color: #f6f7f8;
+      background-color: #fff;
       width: 20%;
       border-right: 1px solid #eee;
       height: 100vh;

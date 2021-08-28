@@ -8,6 +8,7 @@ import { IoPerson, IoRocketSharp } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { IoMdNotifications } from "react-icons/io";
 import { FormControl, InputGroup } from "react-bootstrap";
+import { Slide } from "@material-ui/core";
 // import { FormControl, InputGroup } from "react-bootstrap";
 const Layout = ({ children }) => {
   const links = [
@@ -26,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <Wrapper>
       <div className="content-wrapper">
-        <div className="sidebar">
+        <div className="sidebar shadow">
           <div className="sidebar-card">
             <div className="navbar-brand">
               <div className="logo">
@@ -40,12 +41,14 @@ const Layout = ({ children }) => {
             <ul className="list-unstyled p-3">
               {links.map((v, i) => (
                 <li key={i}>
-                  <Link href={v.href}>
-                    <a className={asPath == v.href ? "active" : ""}>
-                      <div className="icon shadow">{v.icon}</div>
-                      <span>{v.title}</span>
-                    </a>
-                  </Link>
+                  <Slide direction="right" delay={i * 100}>
+                    <Link href={v.href}>
+                      <a className={asPath == v.href ? "active" : ""}>
+                        <div className="icon shadow">{v.icon}</div>
+                        <span>{v.title}</span>
+                      </a>
+                    </Link>
+                  </Slide>
                 </li>
               ))}
             </ul>

@@ -2,6 +2,8 @@ import Dashboard from "../styles/dashboardW";
 import { FaCoins } from "react-icons/fa";
 
 export default function Home() {
+
+
   return (
     <Dashboard>
       <div className="row">

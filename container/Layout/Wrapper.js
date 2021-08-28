@@ -79,22 +79,43 @@ const Wrapper = styled.div`
       background-color: #f6f7f8;
       flex: 1;
       overflow-x: hidden !important;
+      position: relative;
       .header {
+        width: 78%;
+        z-index: 100000;
+        position: fixed;
+        top: 0;
         background-color: #fff;
-        width: 100%;
         padding: 20px;
+        background-color: #ffffff90;
+        backdrop-filter: blur(10px);
 
-        .profile-bold {
-          font-weight: 700;
-        }
         .logo {
           width: 10%;
           img {
             width: 100%;
           }
         }
+
+        .right-side {
+          * {
+            font-size: 20px;
+          }
+          justify-content: space-evenly;
+          width: 50%;
+          color: #344767;
+          font-size: 2rem;
+          .sign-in {
+            display: flex;
+            align-items: center;
+            span {
+              margin-left: 5px;
+            }
+          }
+        }
       }
       .pages {
+        margin-top: 100px;
         padding: 5px;
         min-height: 100vh;
         background-color: #f6f7f8;

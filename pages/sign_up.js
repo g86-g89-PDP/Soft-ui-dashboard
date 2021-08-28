@@ -1,4 +1,13 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import {
+  faDribbble,
+  faTwitter,
+  faInstagram,
+  faPinterest,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 import styled from "styled-components";
 
@@ -472,11 +481,21 @@ export default function Home() {
                 </a>
               </div>
               <div className="col-lg-8 mx-auto text-center mb-4 mt-2">
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FontAwesomeIcon icon={faDribbble} />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FontAwesomeIcon icon={faPinterest} />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </div>
             </div>
             <div className="row">

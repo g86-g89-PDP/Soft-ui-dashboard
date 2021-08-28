@@ -7,7 +7,6 @@ import { BiSearch } from "react-icons/bi";
 import { IoPerson } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { IoMdNotifications } from "react-icons/io";
-import { useState } from "react";
 import { FormControl, InputGroup } from "react-bootstrap";
 // import { FormControl, InputGroup } from "react-bootstrap";
 const Layout = ({ children }) => {

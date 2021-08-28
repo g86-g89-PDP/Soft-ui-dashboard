@@ -1,5 +1,4 @@
 import { Link } from "@material-ui/core";
-import { button } from "bootstrap";
 import { Fade, Slide } from "react-awesome-reveal";
 import { BillingWrapper } from "../styles/BillingWrapper";
 import React from "react";
@@ -21,8 +20,8 @@ const Billing = () => {
                 <Slide>
                   <div className="creditcard">
                     <div className="m-2">
-                      <span classNam="mask"></span>
-                      <div classNam="card-body">
+                      <span className="mask"></span>
+                      <div className="card-body">
                         <BsWifi />
                         <h5 className="text-white mt-4 mb-5 pb-2">
                           4562&nbsp;&nbsp;&nbsp;1122&nbsp;&nbsp;&nbsp;4594&nbsp;&nbsp;&nbsp;7852
@@ -95,10 +94,7 @@ const Billing = () => {
                       <h6>Payment Method</h6>
                     </div>
                     <div className="col-6 text-end">
-                      <a
-                        className="btn bg-gradient-dark mb-0"
-                        href="javascript:;"
-                      >
+                      <a className="btn bg-gradient-dark mb-0" href="#">
                         <i className="fas fa-plus" aria-hidden="true"></i>
                         &nbsp;&nbsp;Add New Card
                       </a>
@@ -266,15 +262,12 @@ const Billing = () => {
                     <div className="ms-auto text-end">
                       <a
                         className="btn btn-link text-danger text-gradient px-3 mb-0"
-                        href="javascript:;"
+                        href="#"
                       >
                         <FiTrash2 />
                         Delete
                       </a>
-                      <a
-                        className="btn btn-link text-dark px-3 mb-0"
-                        href="javascript:;"
-                      >
+                      <a className="btn btn-link text-dark px-3 mb-0" href="#">
                         <TiPencil />
                         Edit
                       </a>
@@ -305,15 +298,12 @@ const Billing = () => {
                     <div className="ms-auto text-end">
                       <a
                         className="btn btn-link text-danger text-gradient px-3 mb-0"
-                        href="javascript:;"
+                        href="#"
                       >
                         <FiTrash2 />
                         Delete
                       </a>
-                      <a
-                        className="btn btn-link text-dark px-3 mb-0"
-                        href="javascript:;"
-                      >
+                      <a className="btn btn-link text-dark px-3 mb-0" href="#">
                         <TiPencil />
                         Edit
                       </a>
@@ -344,15 +334,12 @@ const Billing = () => {
                     <div className="ms-auto text-end">
                       <a
                         className="btn btn-link text-danger text-gradient px-3 mb-0"
-                        href="javascript:;"
+                        href="#"
                       >
                         <FiTrash2 />
                         Delete
                       </a>
-                      <a
-                        className="btn btn-link text-dark px-3 mb-0"
-                        href="javascript:;"
-                      >
+                      <a className="btn btn-link text-dark px-3 mb-0" href="#">
                         <TiPencil />
                         Edit
                       </a>
@@ -511,7 +498,6 @@ const Billing = () => {
                       rel="noreferrer"
                       href="https://www.creative-tim.com"
                       className="nav-link text-muted"
-                      target="_blank"
                     >
                       Creative Tim
                     </a>
@@ -521,7 +507,6 @@ const Billing = () => {
                       rel="noreferrer"
                       href="https://www.creative-tim.com/presentation"
                       className="nav-link text-muted"
-                      target="_blank"
                     >
                       About Us
                     </a>
@@ -531,7 +516,6 @@ const Billing = () => {
                       rel="noreferrer"
                       href="https://creative-tim.com/blog"
                       className="nav-link text-muted"
-                      target="_blank"
                     >
                       Blog
                     </a>
@@ -541,7 +525,6 @@ const Billing = () => {
                       rel="noreferrer"
                       href="https://www.creative-tim.com/license"
                       className="nav-link pe-0 text-muted"
-                      target="_blank"
                     >
                       License
                     </a>

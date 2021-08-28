@@ -1,13 +1,8 @@
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import {
-  faDribbble,
-  faTwitter,
-  faInstagram,
-  faPinterest,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+import { FiDribbble, FiInstagram } from "react-icons/fi";
+import { SiTwitter } from "react-icons/si";
+import { FaPinterest } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 import styled from "styled-components";
 
@@ -482,35 +477,19 @@ export default function Home() {
               </div>
               <div className="col-lg-8 mx-auto text-center mb-4 mt-2">
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon
-                    icon={faDribbble}
-                    width="20px"
-                    height="20px"
-                  />
+                  <FiDribbble />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    width="20px"
-                    height="20px"
-                  />
+                  <SiTwitter />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    width="20px"
-                    height="20px"
-                  />
+                  <FiInstagram />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon
-                    icon={faPinterest}
-                    width="20px"
-                    height="20px"
-                  />
+                  <FaPinterest />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon icon={faGithub} width="20px" height="20px" />
+                  <AiFillGithub />
                 </a>
               </div>
             </div>

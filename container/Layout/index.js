@@ -3,7 +3,12 @@ import Wrapper from "./Wrapper";
 import Link from "next/link";
 import { AiTwotoneShop } from "react-icons/ai";
 import { useRouter } from "next/dist/client/router";
-
+import { BiSearch } from "react-icons/bi";
+import { IoPerson } from "react-icons/io5";
+import { FiSettings } from "react-icons/fi";
+import { IoMdNotifications } from "react-icons/io";
+import { useState } from "react";
+import { FormControl, InputGroup } from "react-bootstrap";
 const Layout = ({ children }) => {
 
     const links = [
@@ -48,21 +53,18 @@ const Layout = ({ children }) => {
                     </div>
                     <div className="pages">{children}</div>
                 </div>
-=======
-  const links = [
-    {href: "/", title: "Home", active: true, icon: <AiTwotoneShop /> },
+
+                const links = [
+                {href: "/", title: "Home", icon: <AiTwotoneShop /> },
                 {
                     href: "/profile",
                 title: "Profile",
-                active: false,
                 icon: <AiTwotoneShop />,
     },
-                {href: "/", title: "Home", active: false, icon: <AiTwotoneShop /> },
-                {href: "/", title: "Home", active: false, icon: <AiTwotoneShop /> },
                 ];
 
-                const {query} = useRouter();
-                console.log(query);
+                const {asPath} = useRouter();
+                console.log(asPath);
                 return (
                 <Wrapper>
                     <div className="content-wrapper">
@@ -75,11 +77,64 @@ const Layout = ({ children }) => {
                                             alt=""
                                         />
                                     </div>
-                                    <span class="ms-1 font-weight-bold">Soft UI Dashboard</span>
-
+                                    <span className="ms-1 font-weight-bold">Soft UI Dashboard</span>
                                 </div>
-        </Wrapper>
-                            );
+                                <ul className="list-unstyled p-3">
+                                    {links.map((v, i) => (
+                                        <li key={i}>
+                                            <Link href={v.href}>
+                                                <a className={asPath == v.href ? "active" : ""}>
+                                                    <div className="icon shadow">{v.icon}</div>
+                                                    <span>{v.title}</span>
+                                                </a>
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="content">
+                            <div className="header shadow d-flex justify-content-between">
+                                <div className="left-side">
+                                    <span className="">Pages </span>
+                                    <span className="">
+                                        {" "}
+                                        /
+                                        {asPath == "/" ? (
+                                            <span className="ms-1 fw-bold">Home</span>
+                                        ) : (
+                                            <span className="ms-1 fw-bold">
+                                                {asPath.toUpperCase().substring(1)}
+                                            </span>
+                                        )}
+                                    </span>
+                                </div>
+                                <div className="right-side d-flex align-items-center">
+                                    <InputGroup className="w-50">
+                                        <InputGroup.Text id="basic-addon1">
+                                            <BiSearch />
+                                        </InputGroup.Text>
+                                        <FormControl
+                                            placeholder="Type here..."
+                                            aria-label="Type here..."
+                                            aria-describedby="basic-addon1"
+                                        />
+                                    </InputGroup>
+
+                                    <div className="sign-in">
+                                        <IoPerson />
+                                        <span>Sign In</span>
+                                    </div>
+
+                                    <FiSettings />
+                                    <IoMdNotifications />
+                                </div>
+                            </div>
+                            <div className="pages">{children}</div>
+                        </div>
+                    </div>
+                </Wrapper>
+                );
 };
 
-                            export default Layout;
+                export default Layout;

@@ -6,7 +6,7 @@ const Wrapper = styled.div`
 
     .sidebar {
       background-color: #f6f7f8;
-      width: 17%;
+      width: 20%;
       border-right: 1px solid #eee;
       height: 100vh;
       position: sticky;
@@ -84,7 +84,7 @@ const Wrapper = styled.div`
       overflow-x: hidden !important;
       position: relative;
       .header {
-        width: 78%;
+        width: 85%;
         z-index: 100000;
         position: fixed;
         top: 0;

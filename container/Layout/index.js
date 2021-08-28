@@ -4,7 +4,7 @@ import Link from "next/link";
 import { AiFillCreditCard, AiTwotoneShop } from "react-icons/ai";
 import { useRouter } from "next/dist/client/router";
 import { BiSearch } from "react-icons/bi";
-import { IoPerson } from "react-icons/io5";
+import { IoPerson, IoRocketSharp } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { IoMdNotifications } from "react-icons/io";
 import { FormControl, InputGroup } from "react-bootstrap";
@@ -15,9 +15,10 @@ const Layout = ({ children }) => {
     {
       href: "/profile",
       title: "Profile",
-      icon: <AiTwotoneShop />,
+      icon: <IoPerson />,
     },
     { href: "/billing", title: "Billing", icon: <AiFillCreditCard /> },
+    { href: "/sign_up", title: "Sign Up", icon: <IoRocketSharp /> },
   ];
 
   const { asPath } = useRouter();

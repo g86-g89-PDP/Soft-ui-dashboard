@@ -2,13 +2,9 @@ import styled from "styled-components";
 
 export const TableWrapper = styled.div`
 
-.tablerow{
-   
-    
-}
-.tablecel2{
-    padding-left: 40px;
-  
+.text1{
+    font-size: 55   px !important;
+    color: red;
 }
 .status{
     font-family:Open Sans ;

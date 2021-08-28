@@ -78,20 +78,20 @@ const Date = () => {
                 <TableRow className="m-4">
                     <TableCell>AUTHOR</TableCell>
                     <TableCell className="tablecel2">FUNCTION </TableCell>
-                    <TableCell>  STATUS </TableCell>
-                    <TableCell>  EMPLOYED </TableCell>
+                    <TableCell className="tablecel3">  STATUS </TableCell>
+                    <TableCell className="tablecel4">  EMPLOYED </TableCell>
                 </TableRow>
 
             </TableHead>
             <TableBody>
-                {table?.map(v => (
-                    <TableRow>
+                {table?.map((v, i) => (
+                    <TableRow key={i}>
                         <TableCell>
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar src={`${v.image}`} />
                                 </ListItemAvatar>
-                                <ListItemText primary={v.username} secondary={v.email} />
+                                <ListItemText className="text1" primary={v.username} secondary={v.email} />
                             </ListItem>
                         </TableCell>
                         <TableCell>

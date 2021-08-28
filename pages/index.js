@@ -173,7 +173,6 @@ export default function Home() {
                    {v.money}<span className='tm3'>{v.minus}</span> 
                    </p>
                 </div>
-                
                 <div className='tmIconsCard'>
                   <p className='p-0 m-0 text-light'>{v.icon}</p>
    

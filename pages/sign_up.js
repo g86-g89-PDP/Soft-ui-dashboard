@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-// (../assets/img/curved-images/curved14.jpg)
-
 import styled from "styled-components";
 
 const DashboardWrapper = styled.div`

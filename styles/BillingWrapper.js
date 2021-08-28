@@ -23,6 +23,7 @@ export const BillingWrapper = styled.div`
     padding: 0 !important;
     margin: 5px;
     height: 100%;
+    color: white;
   }
   .creditcard:hover {
     background-color: black;
@@ -45,10 +46,16 @@ export const BillingWrapper = styled.div`
     width: 60px;
     height: 50px;
   }
+  .btn-outline-primary {
+    color: #cb0c9f;
+    border-color: #cb0c9f;
+  }
   .icon {
     margin-left: 25px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center !important;
     width: 64px;
     height: 64px;
@@ -58,5 +65,16 @@ export const BillingWrapper = styled.div`
   .bg-gray-100 {
     background-color: #f8f9fa !important;
     border-radius: 0.75rem;
+  }
+  .keyframes {
+    from {
+      opacity: 0;
+      transform: translate3d(-200px, -100px, 0);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
   }
 `;

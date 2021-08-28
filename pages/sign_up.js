@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { FiDribbble, FiInstagram } from "react-icons/fi";
+import { SiTwitter } from "react-icons/si";
+import { FaPinterest } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 import styled from "styled-components";
 
@@ -80,7 +84,7 @@ const DashboardWrapper = styled.div`
             .MainColl {
               height: 600px;
               margin-top: 50px;
-              z-index: 9999999999;
+              z-index: 9;
               .card {
                 .card-body {
                   font-family: Open Sans;
@@ -152,7 +156,7 @@ const DashboardWrapper = styled.div`
               }
             }
             .MainDiv2 {
-              z-index: 9999999999 !important;
+              z-index: 9 !important;
               .MainH1 {
                 font-weight: 700;
               }
@@ -472,11 +476,21 @@ export default function Home() {
                 </a>
               </div>
               <div className="col-lg-8 mx-auto text-center mb-4 mt-2">
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
-                <a target="_blank" className="text-secondary me-xl-4 me-4"></a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FiDribbble />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <SiTwitter />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FiInstagram />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <FaPinterest />
+                </a>
+                <a target="_blank" className="text-secondary me-xl-4 me-4">
+                  <AiFillGithub />
+                </a>
               </div>
             </div>
             <div className="row">

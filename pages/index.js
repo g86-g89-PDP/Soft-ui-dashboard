@@ -127,9 +127,9 @@ const data = [
 
 const todayMoney=[
   {name:"Today's money",money:"$ 56.300", icon:<FaCoins/>,minus:"+ $50"},
-  {name:"Today's money",money:"$ 56.300", icon:<FaCoins/>,minus:"+ $35"},
-  {name:"Today's money",money:"$ 56.300", icon:<FaCoins/>,minus:"- $70"},
-  {name:"Today's money",money:"$ 56.300", icon:<FaCoins/>,minus:"+ $82.5"}
+  {name:"Today's money",money:"$ 56.300", icon:<RiSignalWifi3Fill/>,minus:"+ $35"},
+  {name:"Today's money",money:"$ 56.300", icon:<FaShopify/>,minus:"- $70"},
+  {name:"Today's money",money:"$ 56.300", icon:<GiRingingBell/>,minus:"+ $82.5"}
 
 ];
 

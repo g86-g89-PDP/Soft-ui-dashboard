@@ -3,7 +3,7 @@ import Wrapper from "./Wrapper";
 import Link from "next/link";
 import { AiFillCreditCard, AiTwotoneShop } from "react-icons/ai";
 import { useRouter } from "next/dist/client/router";
-import { BiSearch } from "react-icons/bi";
+import { BiSearch, BiTable } from "react-icons/bi";
 import { IoPerson, IoRocketSharp } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { IoMdNotifications } from "react-icons/io";
@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
     },
     { href: "/billing", title: "Billing", icon: <AiFillCreditCard /> },
     { href: "/sign_up", title: "Sign Up", icon: <IoRocketSharp /> },
+    { href: "/Table", title: "Table", icon: <BiTable /> },
   ];
 
   const { asPath } = useRouter();

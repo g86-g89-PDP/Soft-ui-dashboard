@@ -482,19 +482,35 @@ export default function Home() {
               </div>
               <div className="col-lg-8 mx-auto text-center mb-4 mt-2">
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon icon={faDribbble} />
+                  <FontAwesomeIcon
+                    icon={faDribbble}
+                    width="20px"
+                    height="20px"
+                  />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    width="20px"
+                    height="20px"
+                  />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    width="20px"
+                    height="20px"
+                  />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon icon={faPinterest} />
+                  <FontAwesomeIcon
+                    icon={faPinterest}
+                    width="20px"
+                    height="20px"
+                  />
                 </a>
                 <a target="_blank" className="text-secondary me-xl-4 me-4">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} width="20px" height="20px" />
                 </a>
               </div>
             </div>

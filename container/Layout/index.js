@@ -1,22 +1,28 @@
 import React from "react";
 import Wrapper from "./Wrapper";
 import Link from "next/link";
-import { AiTwotoneShop } from "react-icons/ai";
+import { AiFillCreditCard, AiTwotoneShop } from "react-icons/ai";
 import { useRouter } from "next/dist/client/router";
 import { BiSearch } from "react-icons/bi";
-import { IoPerson } from "react-icons/io5";
+import { IoPerson, IoRocketSharp } from "react-icons/io5";
 import { FiSettings } from "react-icons/fi";
 import { IoMdNotifications } from "react-icons/io";
-import { useState } from "react";
 import { FormControl, InputGroup } from "react-bootstrap";
+// import { FormControl, InputGroup } from "react-bootstrap";
 const Layout = ({ children }) => {
-
     const links = [
-        { href: "/", title: "Home", active: true, icon: <AiTwotoneShop /> },
-        { href: "/signin", title: "Signin", active: false, icon: <AiTwotoneShop /> },
-        { href: "/", title: "Home", active: false, icon: <AiTwotoneShop /> },
-        { href: "/", title: "Home", active: false, icon: <AiTwotoneShop /> },
+        { href: "/", title: "Home", icon: <AiTwotoneShop /> },
+        {
+            href: "/profile",
+            title: "Profile",
+            icon: <IoPerson />,
+        },
+        { href: "/billing", title: "Billing", icon: <AiFillCreditCard /> },
+        { href: "/sign_up", title: "Sign Up", icon: <IoRocketSharp /> },
     ];
+
+    const { asPath } = useRouter();
+    console.log(asPath);
     return (
         <Wrapper>
             <div className="content-wrapper">
@@ -29,14 +35,14 @@ const Layout = ({ children }) => {
                                     alt=""
                                 />
                             </div>
-                            <span class="ms-1 font-weight-bold">Soft UI Dashboard</span>
+                            <span className="ms-1 font-weight-bold">Soft UI Dashboard</span>
                         </div>
                         <ul className="list-unstyled p-3">
                             {links.map((v, i) => (
                                 <li key={i}>
                                     <Link href={v.href}>
-                                        <a className={v.active ? "active" : ""}>
-                                            <div className="icon">{v.icon}</div>
+                                        <a className={asPath == v.href ? "active" : ""}>
+                                            <div className="icon shadow">{v.icon}</div>
                                             <span>{v.title}</span>
                                         </a>
                                     </Link>
@@ -46,95 +52,47 @@ const Layout = ({ children }) => {
                     </div>
                 </div>
                 <div className="content">
-                    <div className="header shadow">
-                        <div className="logo">
-                            <img src="vercel.svg" alt="" />
+                    <div className="header shadow d-flex justify-content-between">
+                        <div className="left-side">
+                            <span className="">Pages </span>
+                            <span className="">
+                                {" "}
+                                /
+                                {asPath == "/" ? (
+                                    <span className="ms-1 fw-bold">Home</span>
+                                ) : (
+                                    <span className="ms-1 fw-bold">
+                                        {asPath.toUpperCase().substring(1)}
+                                    </span>
+                                )}
+                            </span>
+                        </div>
+                        <div className="right-side d-flex align-items-center">
+                            <InputGroup className="w-50">
+                                <InputGroup.Text id="basic-addon1">
+                                    <BiSearch />
+                                </InputGroup.Text>
+                                <FormControl
+                                    placeholder="Type here..."
+                                    aria-label="Type here..."
+                                    aria-describedby="basic-addon1"
+                                />
+                            </InputGroup>
+
+                            <div className="sign-in">
+                                <IoPerson />
+                                <span>Sign In</span>
+                            </div>
+
+                            <FiSettings />
+                            <IoMdNotifications />
                         </div>
                     </div>
                     <div className="pages">{children}</div>
                 </div>
-
-                const links = [
-                {href: "/", title: "Home", icon: <AiTwotoneShop /> },
-                {
-                    href: "/profile",
-                title: "Profile",
-                icon: <AiTwotoneShop />,
-    },
-                ];
-
-                const {asPath} = useRouter();
-                console.log(asPath);
-                return (
-                <Wrapper>
-                    <div className="content-wrapper">
-                        <div className="sidebar">
-                            <div className="sidebar-card">
-                                <div className="navbar-brand">
-                                    <div className="logo">
-                                        <img
-                                            src="https://demos.creative-tim.com/soft-ui-dashboard/assets/img/logo-ct.png"
-                                            alt=""
-                                        />
-                                    </div>
-                                    <span className="ms-1 font-weight-bold">Soft UI Dashboard</span>
-                                </div>
-                                <ul className="list-unstyled p-3">
-                                    {links.map((v, i) => (
-                                        <li key={i}>
-                                            <Link href={v.href}>
-                                                <a className={asPath == v.href ? "active" : ""}>
-                                                    <div className="icon shadow">{v.icon}</div>
-                                                    <span>{v.title}</span>
-                                                </a>
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="content">
-                            <div className="header shadow d-flex justify-content-between">
-                                <div className="left-side">
-                                    <span className="">Pages </span>
-                                    <span className="">
-                                        {" "}
-                                        /
-                                        {asPath == "/" ? (
-                                            <span className="ms-1 fw-bold">Home</span>
-                                        ) : (
-                                            <span className="ms-1 fw-bold">
-                                                {asPath.toUpperCase().substring(1)}
-                                            </span>
-                                        )}
-                                    </span>
-                                </div>
-                                <div className="right-side d-flex align-items-center">
-                                    <InputGroup className="w-50">
-                                        <InputGroup.Text id="basic-addon1">
-                                            <BiSearch />
-                                        </InputGroup.Text>
-                                        <FormControl
-                                            placeholder="Type here..."
-                                            aria-label="Type here..."
-                                            aria-describedby="basic-addon1"
-                                        />
-                                    </InputGroup>
-
-                                    <div className="sign-in">
-                                        <IoPerson />
-                                        <span>Sign In</span>
-                                    </div>
-
-                                    <FiSettings />
-                                    <IoMdNotifications />
-                                </div>
-                            </div>
-                            <div className="pages">{children}</div>
-                        </div>
-                    </div>
-                </Wrapper>
-                );
+            </div>
+        </Wrapper>
+    );
 };
 
-                export default Layout;
+export default Layout;

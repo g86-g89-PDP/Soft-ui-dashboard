@@ -84,7 +84,7 @@ const DashboardWrapper = styled.div`
             .MainColl {
               height: 600px;
               margin-top: 50px;
-              z-index: 9999999999;
+              z-index: 9;
               .card {
                 .card-body {
                   font-family: Open Sans;
@@ -156,7 +156,7 @@ const DashboardWrapper = styled.div`
               }
             }
             .MainDiv2 {
-              z-index: 9999999999 !important;
+              z-index: 9 !important;
               .MainH1 {
                 font-weight: 700;
               }

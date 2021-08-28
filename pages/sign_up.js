@@ -14,30 +14,36 @@ const DashboardWrapper = styled.div`
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     nav {
       z-index: 10;
-      .Soft {
-        margin-top: 30px;
-        color: white;
-        font-size: 0.875rem;
-      }
-      .collapse {
-        .MainUl {
-          .MainLi {
-            .MainA {
-              margin-top: 30px;
-              color: white;
+      .container {
+        .Soft {
+          margin-top: 120px;
+          margin-left: 100px !important;
+          color: white;
+          font-size: 0.875rem;
+        }
+        .collapse {
+          .MainUl {
+            .MainLi {
+              .MainA {
+                margin-top: 110px;
+                color: white;
+              }
+              .Margin {
+                margin-top: 57px !important;
+              }
             }
           }
-        }
-        .MainUl2 {
-          .MainLi2 {
-            .MainA2 {
-              margin-top: 30px;
-              width: 130px;
-              height: 40px;
-              padding: 0.5rem 2rem;
-              color: white;
-              border-radius: 1.875rem;
-              background-image: linear-gradient(310deg, #7928ca, #ff0080);
+          .MainUl2 {
+            .MainLi2 {
+              .MainA2 {
+                margin-top: 110px !important;
+                width: 130px;
+                height: 40px;
+                padding: 0.5rem 2rem;
+                color: white;
+                border-radius: 1.875rem;
+                background-image: linear-gradient(310deg, #7928ca, #ff0080);
+              }
             }
           }
         }
@@ -197,7 +203,7 @@ export default function Home() {
           <div className="container">
             <a
               href=""
-              className="navbar-brand fw-bold Soft font-weight-bolder ms-lg-0 ms-3"
+              className="navbar-brand ms-5 fw-bold Soft font-weight-bolder ms-lg-0 ms-3"
             >
               Soft UI Dashboard
             </a>
@@ -215,7 +221,7 @@ export default function Home() {
                     alt="Vercel "
                     width={10}
                     height={10}
-                    className="mt-3"
+                    className="Margin"
                   />
                 </li>
                 <li className="MainLi nav-item dropdown dropdown-hover mx-2 d-flex">
@@ -230,7 +236,7 @@ export default function Home() {
                     alt="Vercel Logo"
                     width={10}
                     height={10}
-                    className="mt-3"
+                    className="Margin"
                   />
                 </li>
                 <li className="MainLi nav-item dropdown dropdown-hover mx-2 d-flex">
@@ -245,7 +251,7 @@ export default function Home() {
                     alt="Vercel Logo"
                     width={10}
                     height={10}
-                    className="mt-3"
+                    className="Margin"
                   />
                 </li>
                 <li className="MainLi nav-item dropdown dropdown-hover mx-2 d-flex">
@@ -260,7 +266,7 @@ export default function Home() {
                     alt="Vercel Logo"
                     width={10}
                     height={10}
-                    className="mt-3"
+                    className="Margin"
                   />
                 </li>
                 <li className="MainLi nav-item dropdown dropdown-hover mx-2 d-flex">
@@ -275,13 +281,13 @@ export default function Home() {
                     alt="Vercel Logo"
                     width={10}
                     height={10}
-                    className="mt-3"
+                    className="Margin"
                   />
                 </li>
               </ul>
               <ul className="MainUl2 navbar-nav d-lg-block d-none">
                 <li className="MainLi2 nav-item">
-                  <a className="fw-bold MainA2 btn btn-sm  bg-gradient-primary  btn-round mb-0 me-1">
+                  <a className="fw-bold MainA2 btn btn-sm mx-5 bg-gradient-primary  btn-round mb-0">
                     Buy Now
                   </a>
                 </li>

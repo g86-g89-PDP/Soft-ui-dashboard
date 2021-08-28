@@ -9,6 +9,9 @@ const Wrapper = styled.div`
       width: 22%;
       border-right: 1px solid #eee;
       height: 100vh;
+      position: sticky;
+      top: 0;
+      flex-shrink: 0;
       padding: 10px 20px;
       .navbar-brand {
         padding: 1.5rem 2rem;
@@ -86,7 +89,7 @@ const Wrapper = styled.div`
         position: fixed;
         top: 0;
         background-color: #fff;
-        padding: 20px;
+        padding: 12px;
         background-color: #ffffff90;
         backdrop-filter: blur(10px);
 
@@ -118,6 +121,7 @@ const Wrapper = styled.div`
         margin-top: 100px;
         padding: 5px;
         min-height: 100vh;
+        height: auto;
         background-color: #f6f7f8;
       }
     }

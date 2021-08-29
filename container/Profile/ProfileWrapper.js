@@ -88,6 +88,95 @@ export const ProfileWrapper = styled.div`
   }
   .profile-content {
     margin-top: 30px;
+    .profile-content-title {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 22px;
+      letter-spacing: -0.442553px;
+      color: #252f40;
+      margin-bottom: 15px;
+    }
+    .profile-content-text {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: -0.331915px;
+      color: #67748e;
+      margin-bottom: 20px;
+    }
+    .profile-content-mid-text {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.387234px;
+      color: #67748e;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 30px;
+    }
+    .profile-content-info {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.387234px;
+      color: #67748e;
+    }
+    .profile-content-info-text {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 700 !important;
+      font-size: 17px;
+      line-height: 19px;
+      letter-spacing: -0.387234px;
+      color: #252f40;
+    }
+    .profile-content-right {
+      img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        margin-right: 10px;
+      }
+      div {
+        h1 {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 19px;
+          letter-spacing: -0.387234px;
+          color: #252f40;
+          margin-top: 10px;
+        }
+        p {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: -0.331915px;
+          color: #67748e;
+        }
+      }
+      a {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 16px;
+        letter-spacing: -0.331915px;
+        color: #cb0c9f;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
     div {
       div {
         padding: 20px;
@@ -97,6 +186,16 @@ export const ProfileWrapper = styled.div`
         div {
           padding: 0;
           min-height: 0;
+          .profile-content-btn-text {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.387234px;
+            color: #67748e;
+            margin-bottom: 0 !important;
+          }
         }
         h1 {
           font-family: Open Sans;
